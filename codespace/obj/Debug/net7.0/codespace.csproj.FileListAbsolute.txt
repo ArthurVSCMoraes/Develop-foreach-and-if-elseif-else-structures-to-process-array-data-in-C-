@@ -1,0 +1,15 @@
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.csproj.AssemblyReference.cache
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.AssemblyInfoInputs.cache
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.AssemblyInfo.cs
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.csproj.CoreCompileInputs.cache
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/bin/Debug/net7.0/codespace
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/bin/Debug/net7.0/codespace.deps.json
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/bin/Debug/net7.0/codespace.runtimeconfig.json
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/bin/Debug/net7.0/codespace.dll
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/bin/Debug/net7.0/codespace.pdb
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.dll
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/refint/codespace.dll
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.pdb
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/codespace.genruntimeconfig.cache
+/workspaces/Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-C-/codespace/obj/Debug/net7.0/ref/codespace.dll
