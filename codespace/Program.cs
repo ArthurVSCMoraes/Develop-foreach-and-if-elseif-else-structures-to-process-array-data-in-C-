@@ -15,75 +15,132 @@
 
 using System;
 
-int currentAssignments = 5;
-int[] sophiaAllNotes = { 90, 86, 87, 98, 100 };
-int[] andrewAllNotes = { 92, 89, 81, 96, 90 };
-int[] emmaAllNotes = { 90, 85, 87, 98, 68 };
-int[] loganAllNotes = { 90, 95, 87, 88, 96 };
+int examAssignments = 5;
 
+int[] sophiaAllNotes = { 90, 86, 87, 98, 100, 94, 90  };
+int[] andrewAllNotes = { 92, 89, 81, 96, 90, 89 };
+int[] emmaAllNotes = { 90, 85, 87, 98, 68, 89, 89, 89 };
+int[] loganAllNotes = {  90, 95, 87, 88, 96, 96 };
+int[] beckyAllNotes = { 92, 91, 90, 91, 92, 92, 92 };
+int[] chrisAllNotes = { 84, 86, 88, 90, 92, 94, 96, 98 };
+int[] ericAllNotes = { 80, 90, 100, 80, 90, 100, 80, 90 };
+int[] gregorAllNotes = { 91, 91, 91, 91, 91, 91, 91 };
 Console.WriteLine("Student\t\tGrade\n");
 
-string[] studentsNames = { "Sophia", "Andrew", "Emma", "Logan" };
+string[] studentsNames = { "Sophia", "Andrew", "Emma", "Logan", "Becky", " Chris", "Eric", "Gregor" };
+int[] studentScore = new int[10];
+string studentGrading = "";
 foreach (string names in studentsNames)
 {
-    if (names == "Sophia")
+    string currentStudant = names;
+    if (currentStudant == "Sophia")
     {
-        decimal sophiaScore;
-        int sophiaSum = 0;
-
-        foreach (int sophia in sophiaAllNotes)
-        {
-            sophiaSum += sophia;
-        }
-        sophiaScore = (decimal)sophiaSum / currentAssignments;
-        Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
-
-
+        studentScore = sophiaAllNotes;
     }
-    else if (names == "Andrew")
+    else if (currentStudant == "Andrew")
     {
-        decimal andrewScore;
-        int andrewSum = 0;
-
-        foreach (int andrew in andrewAllNotes)
-        {
-            andrewSum += andrew;
-        }
-        andrewScore = (decimal)andrewSum / currentAssignments;
-        Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB+");
-
+        studentScore = andrewAllNotes;
     }
-    else if (names == "Emma")
+    else if (currentStudant == "Emma")
     {
-        decimal emmaScore;
-        int emmaSum = 0;
-
-        foreach (int emma in emmaAllNotes)
-        {
-            emmaSum += emma;
-        }
-        emmaScore = (decimal)emmaSum / currentAssignments;
-        Console.WriteLine("Emma:\t\t" + emmaScore + "\tB");
-
+        studentScore = emmaAllNotes;
     }
-    if (names == "Logan")
+    else if (currentStudant == "Logan")
     {
-        decimal loganScore;
-        int loganSum = 0;
-
-        foreach (int items in loganAllNotes)
-        {
-            loganSum += items;
-        }
-        loganScore = (decimal)loganSum / currentAssignments;
-        Console.WriteLine("Logan:\t\t" + loganScore + "\tA-");
-
-
+        studentScore = loganAllNotes;
     }
+    else if ( currentStudant == "Becky")
+    {
+        studentScore = beckyAllNotes;
+    }
+    else if ( currentStudant == "Chris")
+    {
+        studentScore = chrisAllNotes;
+    }
+    else if ( currentStudant == "Eric")
+    {
+        studentScore = ericAllNotes;
+    }
+    else if ( currentStudant == "Gregor")
+    {
+        studentScore = gregorAllNotes;
+    }
+        else
+        continue;
+    int totalSum = 0;
+    decimal studentGrade = 0;
+
+    int gradedAssingments = 0;
+    foreach (int score in studentScore)
+    {
+        gradedAssingments += 1;
+        if (gradedAssingments <= examAssignments)
+        {
+            totalSum +=  score;
+        }
+        else 
+        {
+            totalSum += score / 10;
+        }
+    }
+    studentGrade = (decimal)(totalSum) / examAssignments;
 
 
+    //Qualificia no método de notas americanas, com base em letras, as  notas dos alunos utilizando o studentGrade como variavel de chamada
+    if (studentGrade >= 97)
+    {
+        studentGrading = "A+";
+    }
+    else if (studentGrade >= 93)
+    {
+        studentGrading = "A";
+    }
+    else if (studentGrade >= 90)
+    {
+        studentGrading = "A-";
+    }
+    else if (studentGrade >= 87)
+    {
+        studentGrading = "B+";
+    }
+    else if (studentGrade >= 83)
+    {
+        studentGrading = "B";
+    }
+    else if (studentGrade >= 80)
+    {
+        studentGrading = "B-";
+    }
+    else if (studentGrade >= 77)
+    {
+        studentGrading = "C+";
+    }
+    else if (studentGrade >= 73)
+    {
+        studentGrading = "C";
+    }
+    else if (studentGrade >= 70)
+    {
+        studentGrading = "C-";
+    }
+    else if (studentGrade >= 67)
+    {
+        studentGrading = "D+";
+    }
+    else if (studentGrade >= 63)
+    {
+        studentGrading = "D";
+    }
+    else if (studentGrade >= 60)
+    {
+        studentGrading = "D-";
+    }
+    else
+    {
+        studentGrading = "F";
+    }
+    Console.WriteLine($"{names}\t\t{studentGrade}\t{studentGrading}");
 }
-
-
 Console.WriteLine("Press the Enter key to continue");
 Console.ReadLine();
+
